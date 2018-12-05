@@ -27,7 +27,7 @@ function ListView({ language }) {
   return repos.map((repo, i) => (
     <div className="Repository" key={i}>
       <h3>
-        {repo.name + ' / ' + repo.author}
+        <b>{repo.name}</b> / {repo.author}
         <a className="Repository__link" href={repo.url}>
           <span role="img" aria-label="Chain Link Emoji">
             🔗
